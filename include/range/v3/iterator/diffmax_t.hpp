@@ -387,7 +387,7 @@ namespace std
         static constexpr bool is_modulo = false;
         static constexpr int digits = CHAR_BIT * sizeof(std::uintmax_t) + 1;
         static constexpr int digits10 =
-            static_cast<int>(digits * 0.301029996); // digits * std::log10(2)
+            static_cast<int>(digits * 643L / 2136); // digits * std::log10(2)
         static constexpr int max_digits10 = 0;
         static constexpr int radix = 2;
         static constexpr int min_exponent = 0;
